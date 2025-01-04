@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dell-Technologies Website</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-logo">DELL<span style="color:#555;">Technologies</span></div>
+        <div class="header-search">
+            <input type="text" placeholder="Search Dell">
+            <button>🔍</button>
+        </div>
+        <div class="utility-links">
+            <div class="dropdown-wrapper">
+                <a href="#">👤 Sign In</a>
+                <div class="dropdown">
+                    <h2>Welcome to Dell</h2>
+                    <h3>My Account</h3>
+                    <ul>
+                        <li>Place orders quickly and easily</li>
+                        <li>View orders and track your shipping status</li>
+                        <li>Create and access a list of your products</li>
+                    </ul>
+                    <div class="buttons">
+                        <button id="signInBtn">Sign In</button>
+                        <button id="createAccountBtn">Create an Account</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#">🎧 Contact Us</a>
+            </div>
+        </div>
+    </header>
+     <!-- Navbar Section -->
+     <nav class="navbar">
+        <a href="#">Artificial Intelligence</a>
+        <div class="menu-item">
+            <ul>
+                <li class="IT-infra"><a href="#">IT Infrastructure</a>
+                    <ul class="IT-list">
+                        <li>Dell APEX Multicloud & aas</li>
+                        <li class="product-menu">Products
+                            <ul class="product-list">
+                                <li>servers</li>
+                                <li>Data Storage</li>
+                                <li>Hyperconverged Infrastructure</li>
+                                <li>Networking</li>
+                                <li>Infrastructure</li>
+                                <li>ALOps & IT Observability</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a href="#">Computers & Accessories</a>
+        <a href="#">Services</a>
+        <a href="#">Support</a>
+        <a href="#">Deals</a>
+        <a href="#">Find a Store</a>
+    </nav> 
+
+    <!-- Sign In Section-->
+    <section id="signInSection" style="display:none;">
+        <h2>Sign In</h2>
+        <form id="signInForm">
+            <label>Email:</label>
+            <input type="email" id="signInEmail" required><br>
+            <label>Password:</label>
+            <input type="password" id="signInPassword" required><br>
+            <button type="submit" id="signInSubmit">Sign In</button>
+        </form>
+    </section>
+
+    <!-- Create Account Section-->
+    <section id="createAccountSection" style="display:none;">
+        <h2>Create Account</h2>
+        <form id="createAccountForm">
+            <label>First Name:</label>
+            <input type="text" id="firstName" required><br>
+            <label>Last Name:</label>
+            <input type="text" id="lastName" required><br>
+            <label>Email:</label>
+            <input type="email" id="createEmail" required><br>
+            <label>Password:</label>
+            <input type="password" id="createPassword" required><br>
+            <button type="submit" id="createAccountSubmit">Create Account</button>
+        </form>
+    </section> 
+    <div class="first-div">
+        <img src=""alt="">
+    </div> 
+   
+</body>
+ <script src="./scripts/navbar.js"></script> 
+
+</html>
